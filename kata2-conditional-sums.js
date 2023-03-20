@@ -1,10 +1,10 @@
 const conditionalSum = function(values, condition) {
-  let sum = 0;
-  for (let val of values) {
-    if (condition === "even" && val % 2 === 0) {
-      sum += val;
-    } else if (condition === "odd" && val % 2 != 0) {
-      sum += val;
+  let sum = 0; //stores sum of accepted values
+  for (let val of values) { //loops through inputed array
+    if (condition === "even" && val % 2 === 0) { //checks if value and condition are even
+      sum += val; //adds even value to sum
+    } else if (condition === "odd" && val % 2 != 0) { //checks if value and condition are odd
+      sum += val; //adds odd value to sum
     }
   }
   return sum;
